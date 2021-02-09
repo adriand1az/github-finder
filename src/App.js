@@ -5,7 +5,7 @@ import React ,{
 import axios from 'axios'
 
 // components
-import Navbar from './components/Navbar'
+import Navbar from './layout/Navbar'
 import Users from './components/users/Users'
 // style
 import './App.css';
