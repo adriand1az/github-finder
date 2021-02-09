@@ -1,5 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
+
 
 const UserItem = props => {
 
@@ -21,10 +22,6 @@ const UserItem = props => {
 
 }
 
-UserItem.propTypes = {
-    login : PropTypes.string.isRequired,
-    avatar_url : PropTypes.string.isRequired,
-    html_url : PropTypes.string.isRequired
-}
+
 
 export default UserItem
