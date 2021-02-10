@@ -15,7 +15,8 @@ import './App.css';
 class App extends Component {
   state = {
     users: [],
-    loading: false
+    loading: false,
+    alert: null
   }
 
   searchUsers = async text => {
@@ -30,6 +31,10 @@ class App extends Component {
   clearUsers = () => {
     this.setState({users: [], loading: false})
   }
+// Set alert
+  setAlert = (msg, type) => {
+    this.setState({alert: {msg: msg, type: type}})
+  }
   render(){
       return (
     <div className="App">
@@ -39,6 +44,7 @@ class App extends Component {
             searchUsers={this.searchUsers} 
             clearUsers={this.clearUsers}
             showClear={this.state.users.length > 0 ? true : false}
+            setAlert={this.setAlert}
           />
           <Users loading={this.state.loading} users={this.state.users}/>
         </div>
