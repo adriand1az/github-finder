@@ -8,6 +8,7 @@ import axios from 'axios'
 import Navbar from './layout/Navbar'
 import Users from './components/users/Users'
 import Search from './components/users/Search'
+import Alert from './layout/Alert'
 // style/
 import './App.css';
 
@@ -33,13 +34,14 @@ class App extends Component {
   }
 // Set alert
   setAlert = (msg, type) => {
-    this.setState({alert: {msg: msg, type: type}})
+    this.setState({alert: {msg, type}})
   }
   render(){
       return (
     <div className="App">
         <Navbar />
         <div className='container'>
+          <Alert alert={this.state.alert}/>
           <Search 
             searchUsers={this.searchUsers} 
             clearUsers={this.clearUsers}
