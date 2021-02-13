@@ -13,7 +13,7 @@ import Alert from './layout/Alert'
 // style/
 import './App.css';
 
-
+// class
 class App extends Component {
   state = {
     users: [],
@@ -71,3 +71,4 @@ class App extends Component {
 }
 
 export default App;
+// Easy to understand
