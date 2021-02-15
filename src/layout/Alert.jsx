@@ -11,3 +11,4 @@ const Alert = ({ alert }) => {
 }
 
 export default Alert
+//Sets an alert
