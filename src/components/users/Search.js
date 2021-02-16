@@ -53,3 +53,4 @@ class Search extends Component {
 }
 
 export default Search
+// used to search for usernames
